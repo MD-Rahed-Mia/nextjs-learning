@@ -4,7 +4,6 @@ import Link from "next/link";
 import React from "react";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
-import { link } from "fs";
 
 const sideBarLink = [
   {
@@ -22,6 +21,7 @@ const sideBarLink = [
 ];
 
 export default function SideNav() {
+  
   const pathName = usePathname();
 
   console.log(pathName);
